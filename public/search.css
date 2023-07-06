@@ -1,0 +1,505 @@
+*{
+    --primary60: #8731AF;
+    --primary30: #BE93D2;
+    --primary10: #E8DDED;
+    --sec100: #000000;
+    --sec60: #313131;
+    --sec30: #939393;
+    --sec10: #C4C4C4;
+    --white: #fff;
+    box-sizing: border-box;
+    font-family: poppins;
+    margin: 0px;
+    padding: 0px;
+    --textsm:13px;
+    --textsm:15px;
+}
+
+
+header {
+    margin: 10px 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo-container {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    width: 96px;
+    height: 50px;
+  }
+  
+  .logo {
+    height: 25px;
+    width: 30px;
+    margin-right: 3px;
+  }
+  .brand-name {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+  }
+  .menu-icon{
+      display: block;
+      width: 30px;
+      height: 25px;
+  }
+  .menu-container {
+  position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    width: 100%;
+    background-color: var(--primary60);
+    left: -100%;
+    top: 0;
+    height: 100%;
+    padding: 20px 20px;
+    transition-duration: 2s;
+  }
+  
+  .menu-cancel{
+    align-self: flex-end;
+    height: 25px;
+    width: 25px;
+  }
+  
+  .menu-container li {
+    list-style: none;
+    color: var(--white);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 33px;
+    cursor: pointer;
+  }
+  
+  .menu-container li:hover {
+    color: var(--primary10);
+  }
+  .contact-support-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    display: none;
+  }
+  
+  .contact-support-logo {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .contact-support-btn {
+    border: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 14px;
+    width: 154px;
+    height: 40px;
+    background: #32bb47;
+    border-radius: 10px;
+    color: var(--white);
+    font-size: 13px;
+  }
+  
+  .contact-support-btn:hover {
+    color: #32bb47;
+    background-color: var(--white);
+    border: 2px solid #32bb47;
+  }
+
+.product-container{
+    margin:20px 0px ;
+}
+.product-list-container{
+    display: flex;
+    justify-content: stretch;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 37px;
+    
+}
+.product-image{
+    width: 220.24px;
+    height: 250px;
+}
+
+.product-item{
+    margin-top: 15px;
+}
+.product-name{
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.product-header-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.more-btn{
+    border: none;
+    background-color:var(--white);
+    color: var(--primary60);
+    font-weight: 500;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 85px;
+}
+
+.more-btn img{
+   width: 29px;
+height: 15px;
+    
+}
+
+.product-price{
+    font-weight: 600;
+    font-size: 18px;
+    color: var(--sec60);
+}
+
+.search-container{
+    margin: 30px 15px;
+}
+
+.search-header{
+    font-size: 22px;
+    font-weight: 500;
+}
+
+
+footer {
+    background-color: var(--primary60);
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 30px;
+    padding: 0px 40px;
+    padding-bottom: 10px;
+  }
+  .footer-address-container {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: 100%;
+  }
+  
+  .footer-logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .footer-logo {
+    margin-right: 6px;
+    width: 40px;
+    height: 40px;
+  }
+  
+  .footer-title {
+    font-size: 16px;
+  }
+  
+  .footer-address {
+    margin-top: 20px;
+    font-size: 12px;
+    font-style: italic;
+  }
+  
+  .contact-content {
+    display: flex;
+    font-size: 13px;
+    width: 100px;
+    justify-content: space-between;
+  }
+  .contact-contents {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .contact-img {
+    height: 20px;
+    width: 12px;
+  }
+  
+  .footer-link-container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .footer-link {
+    font-size: 13px;
+  }
+  
+  .footer-copy {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+  }
+  .footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 60px;
+    gap: 40px;
+  }
+  
+
+@media screen and (min-width: 992px) {
+    header {
+        margin: 20px 40px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .menu-icon{
+        display: none;
+      }
+      .logo-container {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        width: 196px;
+        height: 50px;
+      }
+      .menu-cancel{
+        display: none;
+      }
+    
+      .logo {
+        height: 30px;
+        width: 40px;
+        margin-right: 10px;
+      }
+      .brand-name {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 40px;
+      }
+    
+      .menu-container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width: 500px;
+        position: static;
+        height: auto;
+        background-color: var(--white);
+      }
+    
+      .menu-container li {
+        list-style: none;
+        color: var(--sec30);
+        font-style: normal;
+        font-weight: 500;
+        font-size: 13px;
+        line-height: 33px;
+        cursor: pointer;
+        
+      }
+    
+      .menu-container li:hover {
+        color: var(--primary60);
+      }
+      .contact-support-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+    
+      .contact-support-logo {
+        width: 40px;
+        height: 40px;
+      }
+    
+      .contact-support-btn {
+        border: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 5px 14px;
+        width: 154px;
+        height: 40px;
+        background: #32bb47;
+        border-radius: 10px;
+        color: var(--white);
+        font-size: 13px;
+      }
+    
+      .contact-support-btn:hover {
+        color: #32bb47;
+        background-color: var(--white);
+        border: 2px solid #32bb47;
+      }
+    
+
+.product-container{
+    margin:20px 0px ;
+}
+.product-list-container{
+    display: flex;
+    justify-content: start;
+    align-items: stretch;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    gap: 37px;
+    
+}
+.product-image{
+    width: 220.24px;
+height: 250px;
+}
+
+.product-item{
+    margin-top: 15px;
+}
+.product-name{
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.product-header-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.more-btn{
+    border: none;
+    background-color:var(--white);
+    color: var(--primary60);
+    font-weight: 500;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 85px;
+}
+
+.more-btn img{
+   width: 29px;
+height: 15px;
+    
+}
+
+.product-price{
+    font-weight: 600;
+    font-size: 18px;
+    color: var(--sec60);
+}
+
+.search-container{
+    margin: 30px 40px;
+}
+
+.search-header{
+    font-size: 22px;
+    font-weight: 500;
+}
+
+
+footer{
+    background-color: var(--primary60);
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 30px;
+    padding: 0px 40px;
+    padding-bottom: 10px;
+}
+.footer-address-container{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: 350px;
+}
+
+.footer-logo-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-logo{
+    margin-right:6px;
+    width: 40px;
+    height: 40px;
+}
+
+.footer-title{
+    font-size: 20px;
+}
+
+.footer-address{
+    margin-top: 20px;
+    font-size: 12px;
+    font-style: italic;
+}
+
+.contact-content{
+    
+    display: flex;
+    font-size: 13px;
+    width: 100px;
+    justify-content: space-between;
+}
+.contact-contents{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.contact-img{
+    height: 20px;
+    width: 12px;
+}
+
+.footer-link-container{
+    margin-top:20px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer-link{
+    font-size: 13px;
+}
+
+.footer-copy{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10px;
+}
+.footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 60px;
+}
+
+}
